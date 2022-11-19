@@ -1,5 +1,11 @@
-import Login from '@components/Login'
+import { Navbar } from '@components/Navbar'
+import Link from 'next/link'
 
-export default function Home() {
-  return <Login />
+export default function HomePage() {
+  return (
+    <div>
+      <Navbar />
+      <Link href="/login">Login</Link>
+    </div>
+  )
 }
